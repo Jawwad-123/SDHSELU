@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>SDHSELU</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+  body {
+       font-family: "Times New Roman", Times, serif;
+      color: #777;
+  }
+  h3, h4 {
+      margin: 5px 0 30px 0;
+      letter-spacing: 10px;      
+      font-size: 20px;
+      color: #111;
+  }
+  .container {
+      padding: 40px 50px;
+      
+   }
+   .container cara
+   {
+   width:100%;
+    opacity: 0.7;
+   }
+   .info
+   {
+   	padding: 80px 30px;
+   	background-color:#e6f0ff;
+   	font-size:20px;
+   	color:black;
+   	
+   	border: 5px solid black;
+   }
+   
+    .person {
+      border: 10px solid transparent;
+      margin-bottom: 25px;
+      width: 80%;
+      height: 80%;
+      opacity: 0.7;
+  }
+  .person:hover {
+      border-color: #f1f1f1;
+  }
+
+  .bg-1 {
+      background: #666699;
+      color: #bdbdbd;
+  }
+  .bg-1 h3 {
+  color: #fff;}
+  .bg-1 p {font-style: italic;}
+  .list-group-item:first-child {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+  }
+  .list-group-item:last-child {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail p {
+      margin-top: 15px;
+      color: #555;
+  }
+    .nav-tabs li a {
+      color: #777;
+  }
+  #googleMap {
+      width: 100%;
+      height: 400px;
+      opacity: 0.8;
+  }  
+  .navbar {
+      font-family: sans-serif;
+      margin-bottom: 0;
+      background-color: #2d2d30;
+      border: 0;
+      font-size: 15px !important,bold;
+      letter-spacing: 5px;
+      opacity: 1.0;
+	 
+  }
+  .navbar li a, .navbar .navbar-brand { 
+      color: #d5d5d5 !important;
+  }
+  .navbar-nav li a:hover {
+      color: #fff !important;
+  }
+  .navbar-nav li.active a {
+      color: #fff !important;
+      background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+  }
+  .open .dropdown-toggle {
+      color: #fff;
+      background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+      color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+      background-color: red !important;
+  }
+  footer {
+      background-color:  #0066cc;
+      color: #f5f5f5;
+      padding: 3px;
+  }
+  footer a {
+      color: #f5f5f5;
+  }
+  footer a:hover {
+      color: #777;
+      text-decoration: none;
+  }  
+  .form-control {
+      border-radius:0;
+  }
+  textarea {
+      resize: none;
+  }
+  
+  /*social media icons*/
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.whatsapp {
+  background: green;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+
+.content {
+  margin-left: 75px;
+  font-size: 30px;
+/*search*/
+  
+}
+.timer {
+  text-align:center;
+  font-size: 60px;
+  margin-top:0px;
+}
+}
+</style>
+
+</head>
+
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+
+<div class="icon-bar">
+  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+  <a href="#" class="google"><i class="fa fa-google"></i></a> 
+  <a href="#" class="whatsapp"><i class="fa fa-whatsapp"></i></a>
+ <a href="#" class="fa fa-instagram"></a> 
+</div><!--social media end-->
+</div>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html"><img src="Capture.PNG" style="width:80px;height:80px; border-radius: 50%;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-left">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="team.html">OUR TEAM</a></li>
+		<li><a href="activties.html">ACTIVITIES</a></li>
+		<li><a href="facilities.html">OUR FACILITIES</a></li>
+		<li><a href="newsletter.html">NEWSLETTER</a></li>
+        <li><a href="aboutus.html">ABOUT US</a></li>
+		
+		<form class="navbar-form navbar-left" >
+	    </ul>  
+		<ul class="nav navbar-nav navbar-right">
+		<li><a  href="tel:02451224797"><p style="color:red;">EMERGENCY:02451224797</p></a></li>
+		</ul>
+	        
+        
+        </div>
+      </div>
+    	
+    </form>
+
+      
+      </div>
+  </div>
+</nav>
+
+
+
+<div class="cara">
+ <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+	  <li data-target="#myCarousel" data-slide-to="3"></li>
+	  <li data-target="#myCarousel" data-slide-to="4"></li>
+	  <li data-target="#myCarousel" data-slide-to="5"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <img src="head1.jpg" alt="pic1" style="width:100%;height:600px;align:center">
+        <div class="carousel-caption">
+          </div>
+      </div>
+
+      <div class="item">
+        <img src="head2.jpg" alt="robo" style="width:100%;height:600px;">
+        <div class="carousel-caption">
+          </div>
+      </div>
+    
+      <div class="item">
+        <img src="head7.jpg" alt="robo" style="width:100%;height:600px;">
+        <div class="carousel-caption">
+        </div>
+      </div>
+	
+	<div class="item">
+        <img src="head4.jpg" alt="robo" style="width:100%;height:600px;">
+        <div class="carousel-caption">
+        </div>
+      </div>
+	
+	<div class="item">
+        <img src="head5.jpg" alt="robo" style="width:100%;height:600px;">
+        <div class="carousel-caption">
+        </div>
+      
+	  </div><div class="item">
+        <img src="head6.jpg" alt="robo" style="width:100%;height:600px;">
+        <div class="carousel-caption">
+        </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<!-- humanoids) -->
+<div id="band" class="container text-center">
+  <h3><B><u>SUB DISTRICT HOSPITAL SELU(SDHSELU)</u></B></h3>
+  <p><B><em>TO MAKE A DIFFRENCE IN PEOPLES'S LIVES THROUGH EXCELLENT PATIENT CARE</em></b></p>
+	<p style = "text-align:center;color:black"><b>Initially, started on 21st febraury 2005
+			and designated as Sub-District Hospital,the hospital has grown into a much bigger setup in an area of 5 Acres  
+			.It is a 50 bedded hospital with an excellent facility of modern equipment. It also has an Operation Theatre,an NBSU ward and 24-hour available Labour OT . It has a huge inflow of patients from Selu city and neighboring Talukas of Parbhani.</b></p>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p class="text-center"><strong>14 Docters</strong></p><br>
+      <a href="#demo1" data-toggle="collapse">
+        <img src="doc1.PNG" class="img-circle " alt="erica" width="250" height="250">
+      </a>
+      
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>MEDICAL SUPERITENDENT</strong></p><br>
+      <a href="#demo2" data-toggle="collapse">
+        <img src="doc1.jpg" class="img-circle " alt="sophia" width="250" height="250">
+      </a>
+      <div id="demo2" class="collapse">
+        <p>Dr.Sanjay Rangnathrao Harbade</p>
+        <p>M.B.B.S(Gmc Nanded)|M.P.H(Sweden)</p>
+        <p> working with us since 12th june 2014 as a Medical Officer,</p>
+		<p>and holding additional charge of Medical Superitendent since 9th august 2016.</p>
+	  </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>50 Beds</strong></p><br>
+      <a href="#demo3" data-toggle="collapse">
+        <img src="doc4.png" class="img-circle " alt="aico" width="250" height="250">
+      </a>
+          </div>
+  </div>
+</div>
+
+</div>
+
+
+
+<!-- Container info section -->
+	<div class="container">
+  <div class="info">
+  
+    <h3 style="color:black;text-align:center;"><u>SUB DISTRICT HOSPITAL SELU(SDHSELU)</u></h3>
+    <p style="text-align:center;" ><i>“TO MAKE A DIFFRENCE IN PEOPLES'S LIVES THROUGH EXCELLENT PATIENT CARE” </i></p>
+    <br>
+ 	We are one of the leading multi-disciplinary public healthcare service providers in Marathwada Region.
+	We offer a comprehensive bouquet of healthcare service across specialties and super specialties through our Government recognised national programmes.
+	we have a facility that can accomodate 50+ beds and a diverse range of multl-speciality Doctors.
+	<br><br>Starting with basic needs of clients coming for treatment. Like providing safe drinking water, cleanliness inside and outside of hospital. Providing 24 hour electricity,Fan,Light, clean bedsheets,blankets,pillow,and other regular needs of clients.
+ 	We focus on curative services and started focus on maternal and child health services. From Month of May2017 we started giving Caesarian section and hysterectomy services at our institute with help of Dr.Sharad Wagh Gyanecologist.
+ 	<br><br>
+	We provide curative surgical services like:
+	<br>
+	Caeserian section
+	<br>
+	Hysterectomy
+	<br>
+	Tubectomy
+	<br><br>
+	We started with RBSK surgeries also and in this surgery we operated with patients of
+hernia,phimosis,toungue tie, hydrocoele,sebaceous cyst, undecended testes,warts,fibroid
+adenoma ,corn,lipoma,prefacial adhesions,appendectomy and ganglion in school going students.
+<br><br>
+We offer a better Bio-medical waste management in hospital which is done abiding the safety standards which include a yearly contract with Atul environmental services for daily collection of waste and disposal at their site.there is a proper display of Bio-medical waste segrigation waste posters at genral ward,labour room ,operation theater etc.	
+<br><br>
+We conduct two immunization sessions per week at sub-district hospital selu,one on wednesday and another on saturday every week also such sessions are conducted at diffrent places in selu city to cover the maximum beneficiaries.We have successfull ANC clinic ,NBSU ward ,ARSH clinic ,Family planning operations,blood bank,RBSK programme ,MAITREE clinic ,ICTC centre for patient care.
+<br><br>
+We have a successful Orthopedic clinic conducting varoius free camps. AYUSH facility has started in selu wherein Ayuveda,Homeopethy,unani adn yoga services are provided to the patients ,several camps have been arranged till date for the patients benefit.
+<br><br>
+National programmes like NLEP,Tobacco Control,Programmes for Tuberclosis,Programme for Vertor borne diseases NVBBCP,National Blindness control programme etc are being conducted at regular intervals every year.
+<br><br>
+Benefits of JSY and JSSK services are bieng regularly provided.Auxillary services like free food for pregnant ladies and their families is provided ,successful laboratory services are given,authentic blood bank with govt. registration is funtioning at the hospital.  
+ 	<br><br>
+	Number of deliveries increase and total normal deliveries till now – 2461.
+	<br><br>
+	By this service we were awarded Dr.Anandibai Gopalrao Joshi Award twice and
+Kayakalp Award once. Nagar Parishad Selu Awarded our Medical Superitendent as the Best Officer in Selu .
+We developed a beautiful Garden in our premises with contribution of all Staff in SDH.
+Many clients after their satisfaction are giving donations in the form of
+Cots,Bucket,Fan,Stationary,Mops,Air conditioner and Child park benches.
+We arrange multi diagnostics camps ,ophthalmic camps ,blood donation camp,AYUSH camp in
+the institute and provide good services in these camps.
+Regular handicap certificate distribution service is given on every first and third Saturaday in
+our institiute.
+We arranged Mahila melava and haldi kunku programme on the occasion of makarsankranti.
+For all these services our doctors, incharge sister ,staff nurse, office staff,
+servant,sweeper,driver and security worked hard.
+	<br><br>
+	<b>We strive for perfection in public health care and will continue to do so.</b>
+	<br>
+	<p style="text-align:center"><b>-:Our Belief:-<b></p>
+		<br><h4 style="text-align:center"><b>Tradition,Reputation and Adminstration</b><h4>
+	</h3>  
+	</div>
+</div>
+  
+<div id="contact" class="container">
+ <h3 class="text-left">CONTACT US.</h3>
+ <div class="col-md-4">
+     
+      <p><span class="glyphicon glyphicon-map-marker"></span>SELU, INDIA</p>
+      <p><span class="glyphicon glyphicon-phone"></span>Phone:02451224797</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email:mssdhselu@rediffmail.com</p>
+    </div>
+</div>
+<!-- Add Google Maps -->
+<h3 class="text-center">YOU CAN FIND US HERE</h3>
+
+
+
+<div id="googleMap"></div>
+<script>
+function myMap() {
+var myCenter = new google.maps.LatLng(19.4458171,76.4474768);
+var mapProp = {center:myCenter, zoom:18, scrollwheel:false, draggable:true, mapTypeId:google.maps.MapTypeId.ROADMAP};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+var marker = new google.maps.Marker({position:myCenter});
+marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAp0Uda7UL41yLWd_VA68Vqn1uC4ywoAUA &callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+<br><br>
+<!-- Footer -->
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p> Copyright &copy 2019 SDHSELU. All Rights Reserved.</p>
+</div>
+   
+</footer>
+<!--java script for google maps-->
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+
+</body>
+</html>
+
